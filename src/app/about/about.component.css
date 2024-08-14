@@ -1,0 +1,14 @@
+.about{
+    height: calc(100vh - 100px);
+}
+
+.bg-btn{
+    background-color: #1abc9c;
+}
+
+.line{
+    height: 5px;
+    width: 100px;
+    color: white;
+    background-color: white;
+}

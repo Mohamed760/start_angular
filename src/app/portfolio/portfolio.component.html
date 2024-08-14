@@ -1,0 +1,16 @@
+<div class="d-flex align-items-center flex-column">
+    <h3 class="fw-bold fs-1 mb-3 head-color pt-3">PORTFOLIO COMPONENT</h3>
+<app-line class="mb-3"></app-line>
+</div>
+<div class="container">
+    <div class="row mb-5">
+        @for (item of cardList; track $index) {
+            <div class="col-lg-4">
+                <img [src]="item.img" class="w-100 rounded-3 mb-3" alt="">
+                <img [src]="item.img" class="w-100 rounded-3" alt="">
+            </div>
+        }
+    </div>
+</div>
+
+<app-footer></app-footer>

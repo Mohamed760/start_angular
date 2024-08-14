@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        @for (item of productList; track $index) {
+            <div class="col-lg-4 d-flex flex-column align-items-center">
+                <h2 class="fw-bold">{{item.pName}}</h2>
+                <img [src]="item.pImg" class="img-fluid " alt="">
+                <p>{{item.pfooter}}</p>
+            </div>
+        }
+    </div>
+</div>
+
+<h2 #recommended class="rounded-3 head-color text-white d-flex align-items-center justify-content-center">Recommended Product </h2>
+
+
+@defer ( on viewport(recommended)) {
+
+    <app-recommnededproduct></app-recommnededproduct>
+}
+

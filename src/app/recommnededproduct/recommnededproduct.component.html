@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        @for (item of productList; track $index) {
+            <div class="col-lg-4">
+                <h2 class="fw-bold">{{item.pName}}</h2>
+                <img [src]="item.pImg" class="img-fluid " alt="">
+                <p>{{item.pfooter}}</p>
+            </div>
+        }
+    </div>
+</div>
